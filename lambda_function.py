@@ -29,5 +29,5 @@ def handler(event, context):
   
   return {
     'statusCode': 200,
-    'body': json.dumps(f'{s3_path} successfully saved to {BUCKETNAME} bucket!')
+    'body': json.dumps(f'{s3_path} successfully saved to {BUCKET_NAME} bucket!')
   }
