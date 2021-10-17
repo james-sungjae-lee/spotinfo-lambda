@@ -8,7 +8,7 @@ RUN yum install git -y
 RUN yum install wget -y
 
 # download spotinfo
-RUN wget https://github.com/alexei-led/spotinfo/releases/download/1.0.7/spotinfo_linux_amd64 -P /var/task/
+RUN wget https://github.com/alexei-led/spotinfo/releases/download/1.0.7/spotinfo_linux_amd64 -O spotinfo -P /var/task/
 RUN chmod +x /var/task/spotinfo
 
 # git clone
