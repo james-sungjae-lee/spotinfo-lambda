@@ -16,7 +16,7 @@ def get_spotinfo(command):
   csv_string = stdout.decode('utf-8')
   return csv_string
 
-def lambda_handler(event, context):
+def handler(event, context):
   now = datetime.datetime.now()
   now_time = now.strftime('%H:%M:%S')
 
