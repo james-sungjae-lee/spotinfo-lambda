@@ -65,4 +65,4 @@ for key, value in change_dict.items():
     print(pd.DataFrame(value)[0].value_counts())
     print()
 
-pickle.dump(favorite_color, open(f'{cond_data}-out.p', 'wb'))
+pickle.dump(change_dict, open(f'{cond_data}-out.p', 'wb'))
