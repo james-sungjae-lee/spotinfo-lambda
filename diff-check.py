@@ -5,6 +5,7 @@ import pickle
 import boto3
 import io
 
+parser = argparse.ArgumentParser()
 parser.add_argument('--bucket_name', default='', type=str,
                     help='name of s3 bucket')
 parser.add_argument('--data_cond', default='', type=str,
